@@ -11,7 +11,6 @@ from pages import home, page1, page2
 # Connect the navbar to the index
 from components import navbar
 
-server = app.server
 # define the navbar
 nav = navbar.Navbar()
 
