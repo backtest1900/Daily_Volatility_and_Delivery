@@ -14,7 +14,7 @@ from components import navbar
 # define the navbar
 nav = navbar.Navbar()
 
-server = app.server
+# server = app.server
 
 # Define the index page layout
 app.layout = html.Div([
