@@ -19,8 +19,8 @@ def generate_table(date):
     # print(df)
 
     df1 = pd.read_csv(f'https://archives.nseindia.com/products/content/sec_bhavdata_full_{date}.csv', header=None)
-    df1.drop(df1.columns[[3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 12]], axis=1, inplace=True)
-    df1.rename({0 : 'Name', 1: 'Series', 2: 'Date', 13: 'Delivery_Qty', 14: 'Delivery_%'}, axis=1, inplace=True)
+    df1.drop(df1.columns[[3, 4, 5, 6, 8, 9, 10, 11, 11, 12]], axis=1, inplace=True)
+    df1.rename({0 : 'Name', 1: 'Series', 2: 'Date', 13: 'Delivery_Qty', 14: 'Delivery_%', 7: 'Last_price'}, axis=1, inplace=True)
     df1['Series'].str.replace(' ', '')
     df1 =  df1.loc[(df1['Series'] == ' EQ')]
     # print(df1)
