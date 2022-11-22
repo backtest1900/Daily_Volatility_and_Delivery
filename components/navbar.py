@@ -9,7 +9,7 @@ def Navbar():
     layout = html.Div([
         dbc.NavbarSimple(
             children=[
-                dbc.NavItem(dbc.NavLink("Home", href="/home")),
+                dbc.NavItem(dbc.NavLink("Home", href="/")),
                 dbc.NavItem(dbc.NavLink("About Us", href="/page1")),
                 dbc.NavItem(dbc.NavLink("Contact Us", href="/page2")),
             ] ,
