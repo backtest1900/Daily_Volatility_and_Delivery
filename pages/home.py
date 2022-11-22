@@ -44,9 +44,9 @@ def generate_table(date):
     df3.drop(df3.columns[[3, 4]], axis=1, inplace=True)
     df3['Volatility'] = df3['DV'].astype(float)
     df3["Volatility_%"] = round(df3['Volatility'] * 100,2)
-    df3.drop(df3.columns[[2,5]], axis=1, inplace=True)
-    order = [0,1,4,3,2] # setting column's order
-    df3.rename({'ate_x': 'Date'}, axis=1, inplace=True)
+    df3.drop(df3.columns[[2,6]], axis=1, inplace=True)
+    order = [0,1,2,5,4,3] # setting column's order
+    df3.rename({'Date_x': 'Date'}, axis=1, inplace=True)
     df3 = df3[[df3.columns[i] for i in order]]
     # print(df3)
     return dash_table.DataTable(df3.to_dict('records'),  [{"name": i, "id": i} for i in df3.columns], sort_action='native',)
