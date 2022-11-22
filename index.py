@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 from app import app
 
 # Connect to your app pages
-from pages import home, page1, page2
+from pages import home
 
 # Connect the navbar to the index
 from components import navbar
