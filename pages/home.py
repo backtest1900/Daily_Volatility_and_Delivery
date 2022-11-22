@@ -60,7 +60,7 @@ layout = dbc.Container([
         html.Center(html.H4(children='NSE Future and Options Stocks Daily Volatility & Delivery')),
         html.Br(),
         html.Hr(),
-        html.Center(html.H5(children='* Only trading days data available from (Mon - Fri) days date. Please select sny other trading date... '),style={"color": "red"}),
+        html.Center(html.H5(children='* Only trading days data available from (Mon - Fri) days date. Please select any other trading date... '),style={"color": "red"}),
         # dbc.Col([
         #     html.P("This is column 1."), 
         #     dbc.Button("Test Button", color="primary")
